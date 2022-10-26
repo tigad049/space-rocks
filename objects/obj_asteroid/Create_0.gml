@@ -9,3 +9,6 @@ image_angle = irandom_range(0, 359);
 
 // Setting speed
 speed = 1;
+
+// Decides which way to spin
+spin_angle = irandom_range(-2, 2)

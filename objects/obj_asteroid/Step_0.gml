@@ -2,4 +2,4 @@
 move_wrap(true, true, sprite_width/2);
 
 // Spin
-image_angle += 1;
+image_angle += spin_angle;
