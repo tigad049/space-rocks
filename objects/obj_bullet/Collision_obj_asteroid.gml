@@ -1,3 +1,6 @@
+// ad score
+score += 10;
+
 with (other) {
 	// Destroy the asteroid
 	instance_destroy();

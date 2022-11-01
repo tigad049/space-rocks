@@ -5,3 +5,6 @@ instance_destroy(self);
 repeat(10){
 	instance_create_layer(x, y, "Instances", obj_debris);
 }
+
+// Subtract a life
+lives -= 1;
