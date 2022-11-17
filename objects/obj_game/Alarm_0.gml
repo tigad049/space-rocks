@@ -1,4 +1,5 @@
-if room != rm_game {
+// Check if we are in the game and if we have more than 20 asteroids
+if (room != rm_game) and (instance_count(obj_asteroid) >= 20) {
 	exit;
 }
 
