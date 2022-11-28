@@ -1,9 +1,14 @@
-// ad score
+// add score
 score += 10;
 
 with (other) {
 	// Destroy the asteroid
 	instance_destroy();
+	
+	// Particle effects
+	repeat(10){
+		instance_create_layer(x, y, "Instances", obj_debris);
+	}
 	
 	// Split into 2 smaller asteroids if needed
 	if (sprite_index == spr_asteroid_big) { // Big -> Medium
