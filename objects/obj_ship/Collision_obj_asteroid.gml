@@ -1,10 +1,8 @@
-// Ship gets drestroyed when colliding with an asteroid
-instance_destroy(self);
-
-// Add particle effects
-repeat(10){
-	instance_create_layer(x, y, "Instances", obj_debris);
+if (alarm[0] <= 0) {
+	alarm[0] = 30;
+	with(obj_asteroid) {
+		speed = 0;
+		old_spin_angle = spin_angle;
+		spin_angle = 0;
+	}
 }
-
-// Subtract a life
-lives -= 1;

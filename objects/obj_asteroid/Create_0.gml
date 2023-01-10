@@ -12,3 +12,4 @@ speed = 1;
 
 // Decides which way to spin
 spin_angle = irandom_range(-3, 3);
+old_spin_angle = 0;
