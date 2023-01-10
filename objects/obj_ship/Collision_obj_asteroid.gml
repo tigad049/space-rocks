@@ -8,6 +8,3 @@ repeat(10){
 
 // Subtract a life
 lives -= 1;
-
-// Spawn ship
-instance_create_layer(room_width / 2, room_height / 2, "Instances", obj_ship)
