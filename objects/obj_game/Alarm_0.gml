@@ -1,5 +1,5 @@
-// Check if we are in the game and if we have more than 20 asteroids
-if (room != rm_game) and (instance_count(obj_asteroid) >= 20) {
+// Check if we have more than 20 asteroids
+if instance_number(obj_asteroid) >= 20 {
 	exit;
 }
 
@@ -11,6 +11,9 @@ if choose(0, 1) == 0 {
 	var yy = choose(0, room_height);
 }
 
-instance_create_layer(xx, yy, "Instances", obj_asteroid)
+var asteroid = instance_create_layer(xx, yy, "Instances", obj_asteroid)
+with asteroid {
+	image_alpha = 0;
+}
 
 alarm[0] = 4*room_speed;
