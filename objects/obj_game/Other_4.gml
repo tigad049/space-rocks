@@ -1,19 +1,16 @@
-var repeats = 0;
 if room == rm_game {
-	repeats = 6;
+	spawn_off_camera();
 } else {
-	repeats = 20;
-}
-
-repeat(repeats) {
-	var xx = choose(
-		irandom_range(0, room_width*0.3),
-		irandom_range(room_width*0.7, room_width)
-	);
+	repeat(20) {
+		var xx = choose(
+			irandom_range(0, room_width*0.3),
+			irandom_range(room_width*0.7, room_width)
+		);
 	
-	var yy = choose(
-		irandom_range(0, room_height*0.3),
-		irandom_range(room_height*0.7, room_height)
-	);
-	instance_create_layer(xx, yy, "Instances", obj_asteroid)
+		var yy = choose(
+			irandom_range(0, room_height*0.3),
+			irandom_range(room_height*0.7, room_height)
+		);
+		instance_create_layer(xx, yy, "Instances", obj_asteroid)
+	}
 }

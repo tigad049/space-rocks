@@ -1,9 +1,9 @@
 if instance_exists(target) {
-	cameraX = target.x - (displayW/2);
-	cameraY = target.y - (displayH/2);
+	global.cameraX = target.x - (global.displayW/2);
+	global.cameraY = target.y - (global.displayH/2);
 
-	cameraX = clamp(cameraX, 0, room_width - displayW);
-	cameraY = clamp(cameraY, 0, room_height - displayH);
+	global.cameraX = clamp(global.cameraX, 0, room_width - global.displayW);
+	global.cameraY = clamp(global.cameraY, 0, room_height - global.displayH);
 	
-	camera_set_view_pos(view_camera[0], cameraX, cameraY);
+	camera_set_view_pos(view_camera[0], global.cameraX, global.cameraY);
 }
