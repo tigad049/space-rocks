@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "spacerocks",
   "resources": [
+    {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":5,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":4,},
     {"id":{"name":"spr_ship","path":"sprites/spr_ship/spr_ship.yy",},"order":0,},
     {"id":{"name":"rm_gameover","path":"rooms/rm_gameover/rm_gameover.yy",},"order":3,},
