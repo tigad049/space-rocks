@@ -5,6 +5,13 @@ switch(room) {
 		break;
 	
 	case rm_start:
+		draw_set_alpha(0.5);
+		draw_set_colour(c_black);
+		draw_rectangle(0, 0, room_width, room_height, false);
+		
+		draw_set_alpha(1);
+		draw_set_colour(c_white);
+		
 		draw_set_halign(fa_center);
 		
 		var c = c_yellow;
@@ -22,9 +29,17 @@ switch(room) {
 		);
 		
 		draw_set_halign(fa_left);
+		
 		break;
 	
 	case rm_win:
+		draw_set_alpha(0.5);
+		draw_set_colour(c_black);
+		draw_rectangle(0, 0, room_width, room_height, false);
+		
+		draw_set_alpha(1);
+		draw_set_colour(c_white);
+		
 		draw_set_halign(fa_center);
 		
 		var c = c_lime;
@@ -39,6 +54,13 @@ switch(room) {
 		break;
 	
 	case rm_gameover:
+		draw_set_alpha(0.5);
+		draw_set_colour(c_black);
+		draw_rectangle(0, 0, room_width, room_height, false);
+		
+		draw_set_alpha(1);
+		draw_set_colour(c_white);
+		
 		draw_set_halign(fa_center);
 		
 		var c = c_red;
