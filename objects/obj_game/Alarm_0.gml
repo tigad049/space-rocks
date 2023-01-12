@@ -1,5 +1,6 @@
 // Check if we have more than 20 asteroids
 if instance_number(obj_asteroid) >= 20 {
+	alarm[0] = 4*room_speed;
 	exit;
 }
 
