@@ -14,4 +14,5 @@ if (alarm[0] <= 0) {
 	with(obj_bullet) {
 		speed = 0;
 	}
+	screenshake(0.5, 3, 0.5);
 }

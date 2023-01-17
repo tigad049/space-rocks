@@ -1,3 +1,5 @@
+screenshake(3, 10, 0.5);
+
 with(obj_asteroid) {
 	speed = 1;
 	spin_angle = old_spin_angle;
