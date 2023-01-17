@@ -1,10 +1,25 @@
-///@description spawn_off_camera
+///@description spawn_off_camera(obj, num);
 ///@arg obj
 ///@arg number
 
-var obj = argument0;
-var num = argument1;
+function spawn_off_camera(obj, num) {
+	var xx, yy;
+	var pad = 64;
 
-var xx = random_range(0, room_width);
-var yy = random_range(0, room_height);
-instance_create_layer(xx, yy, "Instances", obj);
+	repeat(num) {
+		xx = random_range(0, room_width);
+		yy = random_range(0, room_height);
+	
+		while(
+			point_in_rectangle(xx, yy,
+			global.cameraX - pad, global.cameraY - pad,
+			(global.cameraX + global.displayW) + pad,
+			(global.cameraY + global.displayH) + pad)
+		) {
+			xx = random_range(0, room_width);
+			yy = random_range(0, room_height);
+		}
+
+		instance_create_layer(xx, yy, "Instances", obj);
+	}
+}
