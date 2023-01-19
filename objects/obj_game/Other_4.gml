@@ -1,7 +1,7 @@
 if (room == rm_game) {
-	spawn_off_camera(obj_asteroid, 10);
+	spawn_off_camera(obj_asteroid, global.asteroid_limit/2);
 } else {
-	repeat(global.asteroid_limit) {
+	repeat(global.asteroid_limit/4) {
 		var xx = choose(
 			irandom_range(0, room_width*0.3),
 			irandom_range(room_width*0.7, room_width)
