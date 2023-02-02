@@ -1,6 +1,6 @@
 take_inputs = true;
 
-if lives <= 2 {
+if obj_game.respawn == true {
 	invincible = true;
 	alarm[1] = 120;
 	alarm[2] = 4;
