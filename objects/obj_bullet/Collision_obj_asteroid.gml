@@ -1,6 +1,10 @@
 // add score
 score += 10;
 
+if score % 200 == 0 {
+	lives += 1;
+}
+
 with (other) {
 	// Destroy the asteroid
 	instance_destroy();
