@@ -13,6 +13,11 @@ with(obj_bullet) {
 	speed = 5;	
 }
 
+audio_resume_sound(obj_game.songloop);
+audio_resume_sound(snd_ast_explode);
+audio_resume_sound(snd_plr_shoot);
+audio_play_sound(snd_plr_explode, 1, false, 0.5);
+
 // Destroy ship
 instance_destroy(self);
 

@@ -16,5 +16,10 @@ if not invincible {
 			speed = 0;
 		}
 		screenshake(0.5, 3, 0.5);
+		
+		audio_pause_sound(snd_ast_explode);
+		audio_pause_sound(snd_plr_shoot);
+		audio_pause_sound(obj_game.songloop);
+		audio_play_sound(snd_plr_hitstop, 1, false, 0.5);
 	}
 }

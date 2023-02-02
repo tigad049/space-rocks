@@ -20,6 +20,7 @@ if take_inputs {
 	//Shooting
 	if keyboard_check_pressed(vk_space) {
 		instance_create_layer(x, y, "Instances", obj_bullet);
+		audio_play_sound(snd_plr_shoot, 9, false, 0.5);
 	}
 }
 
