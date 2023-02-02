@@ -1,4 +1,6 @@
 if (room == rm_game) {
+	audio_stop_sound(snd_songloop_menu);
+	songloop = audio_play_sound(snd_songloop, 10, true);
 	spawn_off_camera(obj_asteroid, global.asteroid_limit/2);
 } else {
 	repeat(global.asteroid_limit/4) {

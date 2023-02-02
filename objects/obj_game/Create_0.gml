@@ -7,4 +7,4 @@ alarm[0] = 60;
 
 global.asteroid_limit = 128;
 
-songloop = audio_play_sound(snd_songloop, 10, true)
+audio_play_sound(snd_songloop_menu, 10, true);

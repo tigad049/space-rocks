@@ -5,6 +5,7 @@
   "resources": [
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":5,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":4,},
+    {"id":{"name":"snd_songloop_menu","path":"sounds/snd_songloop_menu/snd_songloop_menu.yy",},"order":6,},
     {"id":{"name":"snd_plr_spawn","path":"sounds/snd_plr_spawn/snd_plr_spawn.yy",},"order":5,},
     {"id":{"name":"snd_plr_hitstop","path":"sounds/snd_plr_hitstop/snd_plr_hitstop.yy",},"order":2,},
     {"id":{"name":"spr_ship","path":"sprites/spr_ship/spr_ship.yy",},"order":0,},
